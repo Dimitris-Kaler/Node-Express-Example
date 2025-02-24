@@ -1,5 +1,7 @@
 # Node-Express-Example
-This project is an example of building a RESTful service in Node.js with Express while learning the basics.
+
+Node-Express-Example is a simple project demonstrating how to create a RESTful API using Express. It covers basic concepts such as setting up dependencies, configuring the server, handling different types of HTTP requests (GET, POST), and managing parameters through the URL path, query string, and request body.
+
 
 - `npm init` 
 - `npm install express --save`
