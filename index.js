@@ -3,7 +3,7 @@ const app = express();
 
 const PORT = 2005
 
-
+app.use(express.json())
 
 app.get("/",(req,res)=>{
     res.json( {msg:"Hello World!!!"})
