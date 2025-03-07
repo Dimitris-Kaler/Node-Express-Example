@@ -33,9 +33,9 @@ app.get("/greeting",(req,res)=>{
     res.json({msg:`Hello my name is ${name} and I'm ${age} years old.`})
 })
 
-app.listen(PORT,()=>{
+const server =app.listen(PORT,()=>{
     console.log("Server is running on http://localhost:"+PORT)
 })
 
 
-module.exports = app;
+module.exports = {app,server};
