@@ -6,7 +6,7 @@ const PORT = 2005
 app.use(express.json())
 
 app.get("/",(req,res)=>{
-    res.json( {msg:"Hello World!!!"})
+    res.json( {msg:"Hello World!!"})
 })
 
 
@@ -22,7 +22,7 @@ res.json({msg:`Hello ${name}!`})
 app.post("/greet",(req,res)=>{
     const {name,age} = req.body
 
-    res.json({msg:`Hello my name is ${name} and im ${age} years old.`})
+    res.json({msg:`Hello my name is ${name} and I'm ${age} years old.`})
 })
 
 
@@ -30,9 +30,12 @@ app.post("/greet",(req,res)=>{
 app.get("/greeting",(req,res)=>{
     const { name , age } = req.query
 
-    res.json({msg:`Hello my name is ${name} and im ${age} years old.`})
+    res.json({msg:`Hello my name is ${name} and I'm ${age} years old.`})
 })
 
 app.listen(PORT,()=>{
     console.log("Server is running on http://localhost:"+PORT)
 })
+
+
+module.exports = app;
